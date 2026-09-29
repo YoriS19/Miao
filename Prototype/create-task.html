@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Miáo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="create-task">
+
+    <main class="main">
+        <div class="item">
+            <h1>Create a New Task</h1>
+        </div>
+
+        <form class="two" id="cf" novalidate>
+
+            <div class="card">
+                <div class="fg">
+
+                    <div id="fields" class="fg"></div>
+
+                    <div id="drafts" class="fg"></div>
+
+                    <div class="acts">
+                        <button type="button" class="btn ghost" id="addSub">
+                            Add Subtask
+                        </button>
+                    </div>
+
+                    <div class="acts">
+                        <a class="btn ghost" href="dashboard.html">
+                            Cancel
+                        </a>
+                        <button class="btn">
+                            Create Task
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <aside class="prev" aria-label="Task preview">
+                <h2>Task Preview</h2>
+
+                <div class="ring" style="--p:0">
+                    <span>0%</span>
+                </div>
+
+                <b id="pvT"></b>
+                <span class="muted" id="pvM"></span>
+                <p id="pvD" class="row"></p>
+                <span class="muted" id="pvDl"></span>
+                <span class="muted" id="pvS"></span>
+            </aside>
+
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/tasks.js"></script>
+
+</body>
+</html>

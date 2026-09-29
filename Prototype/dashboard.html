@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1"
+    >
+    <title>Miáo</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body data-page="dashboard">
+
+    <main class="main">
+
+        <section>
+            <h1 id="greet"></h1>
+
+            <p
+                class="muted"
+                id="date"
+            ></p>
+        </section>
+
+        <div class="grid2">
+
+            <article class="card">
+
+                <h2>Today's Focus</h2>
+
+                <p class="muted">
+                    Your top priorities for today
+                </p>
+
+                <ul
+                    class="list"
+                    id="focusList"
+                ></ul>
+
+                <a
+                    class="link"
+                    href="daily-focus.html"
+                >
+                    View Daily Focus →
+                </a>
+
+            </article>
+
+            <article class="card">
+
+                <h2>Overall Progress</h2>
+
+                <div
+                    class="big"
+                    id="overallPct"
+                ></div>
+
+                <div class="prog">
+                    <div class="bar">
+                        <i id="overallBar"></i>
+                    </div>
+                </div>
+
+                <p
+                    class="muted"
+                    id="overallTxt"
+                ></p>
+
+            </article>
+
+        </div>
+
+        <article class="card">
+
+            <h2>Upcoming Deadlines</h2>
+
+            <ul
+                class="cols"
+                id="deadlines"
+            ></ul>
+
+        </article>
+
+        <article class="card row">
+
+            <h2>Active Tasks</h2>
+
+            <ul
+                class="list"
+                id="active"
+            ></ul>
+
+        </article>
+
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/tasks.js"></script>
+
+</body>
+
+</html>

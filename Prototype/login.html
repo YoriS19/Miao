@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1"
+    >
+    <title>Miáo</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="auth">
+        <main class="auth-in">
+
+            <form
+                class="card-auth"
+                id="loginForm"
+                novalidate
+            >
+
+                <div class="logo">
+                    <img
+                        src="img/mascot.png"
+                        alt=""
+                    >
+                    Miáo
+                </div>
+
+                <div>
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        class="in"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your Username..."
+                        autocomplete="username"
+                    >
+                </div>
+
+                <div>
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="pw">
+
+                        <input
+                            class="in"
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Enter your Password..."
+                        >
+
+                        <button
+                            type="button"
+                            class="eye"
+                            aria-label="Show or hide password"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                                />
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="3"
+                                />
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+
+                <p
+                    class="err"
+                    id="err"
+                    role="alert"
+                ></p>
+
+                <button class="btn">
+                    Login
+                </button>
+
+                <p class="sw">
+                    Don't have an account?
+                    <a href="register.html">
+                        Register
+                    </a>
+                </p>
+
+            </form>
+
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
